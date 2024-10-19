@@ -14,7 +14,6 @@ const connection = mysql.createConnection({
 
 app.use(express.static(path.join(__dirname, "public")));
 
-// Ruta para obtener todos los empleados
 app.get("/empleados", (req, res) => {
   connection.query(
     "SELECT * FROM Empleados ORDER BY id DESC",
@@ -47,7 +46,6 @@ app.get("/empleados/:id", (req, res) => {
 app.get("/generarEmpleados", (req, res) => {
   const empleados = [];
 
-  // Generar 10 empleados ficticios
   for (let i = 0; i < 10; i++) {
     const nuevoEmpleado = {
       id: faker.number.int((min = 5000000), (max = 2147483647)),
@@ -56,7 +54,6 @@ app.get("/generarEmpleados", (req, res) => {
       Salario: faker.finance.amount(1000, 6000, 0),
     };
 
-    // Insertar cada empleado generado en la base de datos
     connection.query(
       "INSERT INTO Empleados (documento, nombre, puesto, salario) VALUES (?, ?, ?, ?)",
       [
@@ -69,7 +66,6 @@ app.get("/generarEmpleados", (req, res) => {
         if (err) {
           return res.status(500).send("Error al insertar empleado");
         }
-        // Responder con todos los empleados una vez que se hayan insertado
         if (empleados.length === 10) {
           res.status(201).json("success");
         }
