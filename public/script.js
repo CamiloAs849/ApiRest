@@ -35,7 +35,6 @@ function cargarDatos(id) {
     });
 }
 
-console.log(document.getElementById("cantidad").value);
 
 function insertarEmpleados(cantidad) {
   fetch(`http://localhost:3000/generarEmpleados`)
