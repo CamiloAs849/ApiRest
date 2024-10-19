@@ -51,7 +51,7 @@ A continuación, se detallan las instrucciones para ejecutar el script de inserc
 >
 > El servidor se levantará en http://localhost:3000
 
-> ![IMPORTANT]
+> [!IMPORTANT]
 > Para ejecutar el script y se inserten 10 empleados con datos ficticios, darle en el botón generar,automaticamente se ejecutará y se insertarán los datos
 >
 > Para ver mas información de los empleados, en la tabla darle a ver más, al lado izquierdo aparecerá la información completa del empleados.
