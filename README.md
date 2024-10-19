@@ -7,6 +7,13 @@
 > API REST: Permite acceder a la lista de empleados y consultar la información de un empleado específico a través de dos rutas: /empleados y /empleados/:id.
 A continuación, se detallan las instrucciones para ejecutar el script de inserción de datos y cómo utilizar la API REST.
 
+> [!TIP]
+> Desde cualquier carpeta de tu equipo, descargar el repositorio de git o ejecutar los siguientes comandos:
+>
+> git clone https://github.com/CamiloAs849/ApiRest.git
+>
+> cd ApiRest
+
 > [!IMPORTANT]
 > Antes de ejecutar el script y acceder a la API, asegúrate de tener instalados los siguientes elementos:
 >
