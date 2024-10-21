@@ -28,6 +28,7 @@ A continuación, se detallan las instrucciones para ejecutar el script de inserc
 
 > [!IMPORTANT]
 > Configuración de la base de datos
+> 
 > Desde tu servidor local ejecuta el script de empleados.sql o ejecuta en tu consola de sql el siguiente script:
 
 > [!TIP]
