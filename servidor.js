@@ -44,7 +44,7 @@ app.get("/empleados/:id", (req, res) => {
 });
 
 app.get("/generarEmpleados", (req, res) => {
-  const empleados = [];
+
 
   for (let i = 0; i < 10; i++) {
     const nuevoEmpleado = {
@@ -65,9 +65,6 @@ app.get("/generarEmpleados", (req, res) => {
       (err, results) => {
         if (err) {
           return res.status(500).send("Error al insertar empleado");
-        }
-        if (empleados.length === 10) {
-          res.status(201).json("success");
         }
       }
     );
