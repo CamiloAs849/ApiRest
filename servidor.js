@@ -25,7 +25,7 @@ app.get("/empleados", (req, res) => {
     }
   );
 });
-
+ 
 app.get("/empleados/:id", (req, res) => {
   const id = req.params.id;
   connection.query(
